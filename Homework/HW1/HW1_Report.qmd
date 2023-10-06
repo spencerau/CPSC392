@@ -35,8 +35,6 @@ We are using both a Linear Regression and a Polynomial model to help predict the
 
 # Results
 
-How well did your model perform according to the various metrics, was the model overfit (how can you tell)? What do those performance metrics tell you about the model? Did you need `PolynomialFeatures` (which includes both ploynomial features and interactions)?  How much do you trust the results of your model (in other words, would you be confident telling the store that they should use the model? Why or why not? Are there any caveats you'd give them?) Also answer the two questions you chose from part 2 above. Include the image, a caption as well as your written answer.
-
 ## Linear Regression Model:
 * **Training Set**
     * MSE: 13005.32355
@@ -64,19 +62,45 @@ How well did your model perform according to the various metrics, was the model 
     - MAPE: 3201.79839
     - R-squared: 0.88209
 
-If you want a table you can make one with [this website](https://www.tablesgenerator.com/markdown_tables) and paste the markdown table here. For example:
+| Linear    | Train       | Test        | Polynomial | Train      | Test       |
+|-----------|-------------|-------------|------------|------------|------------|
+| MSE       | 13005.32355 | 12872.35241 | MSE        | 3026.97443 | 3201.79839 |
+| MAE       | 90.10456    | 89.26341    | MAE        | 43.96177   | 45.10156   |
+| MAPE      | 13005.32355 | 12872.35241 | MAPE       | 3026.97443 | 3201.79839 |
+| R-Squared | 0.52338     | 0.51605     | R-Squared  | 0.88850    | 0.88209    |
 
-| A | B | C | D | E |
-|---|---|---|---|---|
-| a | b | c | d | e |
-| a | b | c | d | e |
-| a | b | c | d | e |
+## How well did your model perform according to the various metrics?
+
+The Polynomial Regression model outperforms the Linear Regression model in all metrics. It has lower MSE and MAE values for both the training and testing sets, indicating that it provides a better fit to the data. Additionally, the R-squared value is higher for the Polynomial Regression model, which means it explains more variance in the target variable.
+
+## Was the model overfit (how can you tell)? What do those performance metrics tell you about the model?
+
+The Linear Regression model has lower training set error metrics (MSE and MAE) compared to its testing set error metrics. This indicates there is some level of overfitting, as the Linear Model performs better on the training data vs the test data. On the other hand, the Polynomial Regression model has slightly higher training set error metrics compared to its testing set error metrics, which suggests it is not overfitting.
+
+In the Linear Regression Model, high MSE and MAE values indicate relatively large prediction errors. In addition, high MAPE shows significant percentage errors in predictions, and the low R-squared values suggest a poor fit to the data. In the Polynomial Regression Model, the lower MSE and MAE values indicate smaller prediction errors. The lower MAPE shows smaller percentage errors in predictions, and the higher R-squared values suggest a much better fit to the data.
+
+In summary, the Polynomial Regression model provides a better fit to the data, with lower errors and a higher R-squared value, while the Linear Regression model performs less effectively, with higher errors and a lower R-squared value.
+
+## Did you need PolynomialFeatures (which includes both polynomial features and interactions)?
+
+Yes as PolynomialFeatures was applied to the data when training the Polynomial Regression model. This is evident from the significantly improved performance of the Polynomial Regression model over the Linear Regression model, especially in terms of R-squared, indicating that polynomial features and interactions were useful in capturing the underlying patterns in the data.
+
+## How much do you trust the results of your model?
+
+I would be much more confident using the Polynomial Regression model compared to the Linear Regression model because it provides a better fit to the data and explains a higher percentage of the variance in the target variable. However, there are still some caveats to consider:
+
+* Overfitting: Both models exhibit some level of overfitting, which means their performance on unseen data may not be as good as it is on the training data.
+
+* Model Complexity: The Polynomial Regression model may be more complex and computationally intensive due to the inclusion of polynomial features. This could be a consideration if compute power and scalability are important.
+
+In summary, I would generally recommend using the Polynomial Regression model, and keep in mind its strengths and limitations. While it does provide better predictions than the Linear Regression model, it should also be monitored for potential overfitting and used alongside using sufficient coputational resources.
 
 
 ## *Question 1*: Does being in the experimental test_group actually increase the amount a customer spends at the store? Is this relationship different for the different genders??
 
 ![This is a clothing store](https://media.istockphoto.com/id/831656828/photo/luxury-clothing-store-for-men.jpg?s=612x612&w=0&k=20&c=r9vD1Nvv_W0uco8RN7jPKx2HJ7zxj3ISrnbP5XhGszg=){width=300}
 
+It does seem like those in the experimental test group end up spending more at the store vs those in the control group. In terms of gender, in both the test and control groups, women seem to be the gender that ends up spending the most, while the other three categories (men, nonbinary, other) seem to spend similar amounts regardless of whether they are in the control or test group.
 
 
 
