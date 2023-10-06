@@ -24,7 +24,7 @@ We are using both a Linear Regression and a Polynomial model to help predict the
 
 ## Performance Assessment:
 
-* **Mean Squared Error (MSE):** This metric quantifies the average squared difference between the predicted and actual spending values. A lower MSE indicates a better fit of the model to the data.
+* **Mean Squared Error (MSE):** This metric quantifies the average squared difference between the predicted and actual spending values. A lower MSE indicates a better fit of the model to the data. 
 
 * **Mean Absolute Error (MAE):** It measures the average absolute difference between the predicted and actual spending values. Lower MAE signifies better accuracy.
 
@@ -33,12 +33,36 @@ We are using both a Linear Regression and a Polynomial model to help predict the
 * **R-squared (𝑅²):** This metric assesses the proportion of variance in the dependent variable explained by the independent variables. A higher 𝑅² value indicates a better-fitting model.
 
 
-
-
-
 # Results
 
 How well did your model perform according to the various metrics, was the model overfit (how can you tell)? What do those performance metrics tell you about the model? Did you need `PolynomialFeatures` (which includes both ploynomial features and interactions)?  How much do you trust the results of your model (in other words, would you be confident telling the store that they should use the model? Why or why not? Are there any caveats you'd give them?) Also answer the two questions you chose from part 2 above. Include the image, a caption as well as your written answer.
+
+## Linear Regression Model:
+* **Training Set**
+    * MSE: 13005.32355
+    * MAE: 90.10456
+    * MAPE: 13005.32355
+    * R-squared: 0.52338
+
+* **Testing Set**
+    * MSE: 12872.35241
+    * MAE: 89.26341
+    * MAPE: 12872.35241
+    * R-squared: 0.51605
+
+## Polynomial Regression Model:
+
+* **Training Set:**
+    - MSE: 3026.97443
+    - MAE: 43.96177
+    - MAPE: 3026.97443
+    - R-squared: 0.88850
+
+* **Testing Set:**
+    - MSE: 3201.79839
+    - MAE: 45.10156
+    - MAPE: 3201.79839
+    - R-squared: 0.88209
 
 If you want a table you can make one with [this website](https://www.tablesgenerator.com/markdown_tables) and paste the markdown table here. For example:
 
@@ -48,28 +72,21 @@ If you want a table you can make one with [this website](https://www.tablesgener
 | a | b | c | d | e |
 | a | b | c | d | e |
 
-**Also** answer the two questions you chose from part 2 above. Include the image, a caption as well as your written answer.
 
 ## *Question 1*: Does being in the experimental test_group actually increase the amount a customer spends at the store? Is this relationship different for the different genders??
 
-Add an image via URL:
-
-![My Caption Here](https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg){width=300}
-
-(Note that the `width=300` argument controls how wide your image will be.)
-
-My written answer goes here and I'm going to write very clearly.
-
-## *Question 2*: Why is grass green?
-
-Add an image from your local computer (note: this is a filepath on *my* computer, you'd need to change it to a filepath on *your* computer.)
-
-![My Caption Here](/Users/cparlett/Desktop/corgi.jpg){width=300}
-
-(Note that the `width=300` argument controls how wide your image will be.)
+![This is a clothing store](https://media.istockphoto.com/id/831656828/photo/luxury-clothing-store-for-men.jpg?s=612x612&w=0&k=20&c=r9vD1Nvv_W0uco8RN7jPKx2HJ7zxj3ISrnbP5XhGszg=){width=300}
 
 
-My written answer goes here and I'm going to write very clearly.
+
+
+## *Question 2*: In which year did the store's customers make the most money? Were the store's sales highest in those years?
+
+![These are clothes](/Users/spencerau/Desktop/clothing2.jpg){width=300}
+
+
+
+
 
 # Discussion/Reflection
 
