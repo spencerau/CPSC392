@@ -89,7 +89,7 @@ Yes as PolynomialFeatures was applied to the data when training the Polynomial R
 
 I would be much more confident using the Polynomial Regression model compared to the Linear Regression model because it provides a better fit to the data and explains a higher percentage of the variance in the target variable. However, there are still some caveats to consider:
 
-* Overfitting: Both models exhibit some level of overfitting, which means their performance on unseen data may not be as good as it is on the training data.
+* Overfitting: The Linear Regression Model exhibits some level of overfitting, which means its performance on unseen data may not be as good as it is on the training data. However, the Polynomial Regression model does not seem to be overfitting, which means it may be more robust to unseen data.
 
 * Model Complexity: The Polynomial Regression model may be more complex and computationally intensive due to the inclusion of polynomial features. This could be a consideration if compute power and scalability are important.
 
@@ -100,18 +100,16 @@ In summary, I would generally recommend using the Polynomial Regression model, a
 
 ![This is a clothing store](https://media.istockphoto.com/id/831656828/photo/luxury-clothing-store-for-men.jpg?s=612x612&w=0&k=20&c=r9vD1Nvv_W0uco8RN7jPKx2HJ7zxj3ISrnbP5XhGszg=){width=300}
 
-It does seem like those in the experimental test group end up spending more at the store vs those in the control group. In terms of gender, in both the test and control groups, women seem to be the gender that ends up spending the most, while the other three categories (men, nonbinary, other) seem to spend similar amounts regardless of whether they are in the control or test group.
-
+It does seem like for all four gender groups in the experimental test group end up spending more at the store vs those in the control group. In terms of gender, in both the test and control groups, women seem to be the gender that ends up spending the most, while the other three categories (men, nonbinary, other) seem to spend similar amounts regardless of whether they are in the control or test group. All in all, women spend the most, and the experimental test group does seem to spend more than the control group.
 
 
 ## *Question 2*: In which year did the store's customers make the most money? Were the store's sales highest in those years?
 
 ![These are clothes](/Users/spencerau/Desktop/clothing2.jpg){width=300}
 
-
-
+There seems to be a pretty linear relationship between the year and the self reported salaries of the customers. For example, as the years increased from 2019 to 2022, the customers reported had a consistent increase in salary. The store's sales were also highest in those years, as the store's sales increased as the years increased. This makes sense, as the customers are making more money, they are able to spend more at the store.
 
 
 # Discussion/Reflection
 
-A few sentences about what you learned from performing these analyses, and at least one suggestion for what you'd add or do differently if you were to perform this analysis again in the future.
+I learned that it is important to consider the strengths and limitations of different models, and to choose the model that best fits the data and the problem at hand. In this case, the Polynomial Regression model was a better fit to the data than the Linear Regression model, and it provided more accurate predictions. In addition, its important to consider what kind of data you have to choose an appropriate graph for said data. In this case, I used a boxplot to show the amount each group and gender spent, displaying the average, 1st and 3rd quartiles, and outliers. I also utilized a boxplot for the salary of customers throughout the years, and used another boxplot ot show the store sales throughout the same years. One suggestion for doing this analysis in the future would be to use data that encompasses more years, as the data only went from 2019 to 2022. This would allow for a more accurate representation of the data, and would allow for more accurate predictions.
