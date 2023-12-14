@@ -16,6 +16,6 @@
 <li>e. Final Project</li>
 </ul>
 
-Spencer worked on Q1 and Q4 along with the respective sections on the report. 
+Spencer worked on Q1 and Q3 along with the respective sections on the report. 
 Daniel worked on Q2 and Q6 along with the respective sections on the report. 
-Miles worked on Q3 and Q5 along with the respective sections on the report.
+Miles worked on Q4 and Q5 along with the respective sections on the report.
