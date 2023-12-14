@@ -1,7 +1,7 @@
 ### Personal Info
 <ul>
 <li>a. Spencer Au</li>
-<li>b. 002385256</li>
+<li>b. 2385256</li>
 <li>c. spau@chapman.edu</li>
 
 <li>a. Daniel Boudagian </li>
@@ -9,7 +9,7 @@
 <li>c. boudagian@chapman.edu </li>
 
 <li>a. Miles Allen</li>
-<li>b. this is a placeholder for his ID Number</li>
+<li>b. 2342457</li>
 <li>c. miallen@chapman.edu</li>
 
 <li>d. CPSC392 Section 1</li>
